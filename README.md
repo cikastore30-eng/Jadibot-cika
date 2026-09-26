@@ -1,9 +1,16 @@
 # Wawa Jadi Bot — GitHub
 
-Bagian ini hanya panel/frontend. **Tenka SC tidak dimasukkan ke repository GitHub.**
+Upload **isi ZIP ini** ke repository GitHub. Ini hanya panel website, bukan source Tenka.
 
-API yang dipanggil:
-- `POST /api/create` body `{ "name": "...", "number": "628..." }`
+## Backend
+`config.js` berisi URL API Pterodactyl:
+`https://bot.wawa.cika.situ.web.id`
+
+Jika domain API berbeda, ubah `window.WAWA_API_BASE` di `config.js`.
+
+Website memanggil:
+- `POST /api/create`
 - `GET /api/status/:sessionId`
+- `POST /api/stop/:sessionId`
 
-Ubah `API_BASE` di `script.js` jika API Pterodactyl memakai domain lain.
+Pairing code yang ditampilkan berasal dari `requestPairingCode()` Tenka melalui API Pterodactyl.
