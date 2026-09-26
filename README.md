@@ -1,16 +1,7 @@
 # Wawa Jadi Bot — GitHub
 
-Upload **isi ZIP ini** ke repository GitHub. Ini hanya panel website, bukan source Tenka.
+Panel web kecil untuk membuat session Tenka di Pterodactyl.
 
-## Backend
-`config.js` berisi URL API Pterodactyl:
-`https://bot.wawa.cika.situ.web.id`
+Edit `config.js` bila domain API berbeda. Upload semua file ini ke GitHub Pages/static hosting.
 
-Jika domain API berbeda, ubah `window.WAWA_API_BASE` di `config.js`.
-
-Website memanggil:
-- `POST /api/create`
-- `GET /api/status/:sessionId`
-- `POST /api/stop/:sessionId`
-
-Pairing code yang ditampilkan berasal dari `requestPairingCode()` Tenka melalui API Pterodactyl.
+Flow: nama + nomor → buat session → pairing code asli → tautkan WhatsApp → bot online.
