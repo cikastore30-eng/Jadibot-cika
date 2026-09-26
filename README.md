@@ -1,0 +1,2 @@
+# Jadibot-cika
+Pemula 
